@@ -13,47 +13,11 @@ def 初期ページ():
 def 工学班():
    st.title("工学班")
 
-   if st.button("中等部科学部"):
-      st.session_state.pezibangou = 0
-
-   if st.button("中等部科学部"):
-      st.session_state.pezibangou = 1
-
-   if st.button("中等部科学部"):
-      st.session_state.pezibangou = 2
-
-   if st.button("中等部科学部"):
-      st.session_state.pezibangou = 3
-
 def 生物班():
    st.title("生物班")
 
-   if st.button("中等部科学部"):
-      st.session_state.pezibangou = 0
-
-   if st.button("中等部科学部"):
-      st.session_state.pezibangou = 1
-
-   if st.button("中等部科学部"):
-      st.session_state.pezibangou = 2
-
-   if st.button("中等部科学部"):
-      st.session_state.pezibangou = 3
-
 def 化学班():
    st.title("化学班")
-
-   if st.button("中等部科学部"):
-      st.session_state.pezibangou = 0
-
-   if st.button("中等部科学部"):
-      st.session_state.pezibangou = 1
-
-   if st.button("中等部科学部"):
-      st.session_state.pezibangou = 2
-
-   if st.button("中等部科学部"):
-      st.session_state.pezibangou = 3
 
 
 
