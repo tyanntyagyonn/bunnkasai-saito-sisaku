@@ -20,9 +20,7 @@ def 化学班():
    st.title("化学班")
    st.session_state.最初 = False
 
-#サイドバーの設定およびページ移動
-
-st.sidebar.title("目次")
+#ページ移動
 
 if st.button("科学部　文化祭　特設サイト"):
     st.session_state.最初 = True
