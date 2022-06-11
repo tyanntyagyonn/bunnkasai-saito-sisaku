@@ -3,11 +3,6 @@ import streamlit as st
 if 'pezibangou' not in st.session_state:
   st.session_state.pezibangou = 0
 
-if st.button("aiueo"):
-   st.write("aiueo")
-      
-
-
 #ページごとのプログラム
 
 def 初期ページ():
@@ -46,6 +41,10 @@ if st.sidebar.button("科学部化学班"):
 
 if st.session_state.pezibangou == 0:
    初期ページ()
+
+   if st.button("aiueo"):
+      st.write("aiueo")
+
 elif st.session_state.pezibangou == 1:
    工学班()
 elif st.session_state.pezibangou == 2:
