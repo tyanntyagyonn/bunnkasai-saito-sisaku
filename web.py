@@ -1,12 +1,12 @@
 import streamlit as st
- 
-st.session_state.最初 = False
+
+#初期ページ　変数
+st.session_state.最初 = True
 
 #複数ページの設置
 
 def 初期ページ():
     st.title("科学部　文化祭　特設サイト")
-    最初 = False
 
 def 工学班():
    st.title("工学班")
