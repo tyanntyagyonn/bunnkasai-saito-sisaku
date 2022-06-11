@@ -24,7 +24,7 @@ def 化学班():
 
 st.sidebar.title("目次")
 
-if st.sidebar.button("科学部　文化祭"):
+if st.sidebar.button("科学部　文化祭　特設サイト"):
     st.session_state.最初 = True
 
 if st.sidebar.button("科学部　工学班"):
