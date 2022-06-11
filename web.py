@@ -36,5 +36,5 @@ if st.sidebar.button("科学部　生物班"):
 if st.sidebar.button("科学部　化学班"):
    化学班()
 
-if 最初 == True:
+if st.session_state.最初 == True:
     初期ページ()
