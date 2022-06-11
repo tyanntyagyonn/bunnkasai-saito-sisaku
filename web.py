@@ -1,7 +1,6 @@
 import streamlit as st
 st.title("科学部")
 st.sidebar.button(
-    "科学部"
     ("工学班")
     ("生物班")
     ("生物班")
