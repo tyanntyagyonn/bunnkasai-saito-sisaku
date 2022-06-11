@@ -22,6 +22,9 @@ def 化学班():
 
 #ページ移動
 
+if st.session_state.最初 == True:
+   初期ページ()
+
 if st.button("科学部　文化祭　特設サイト"):
     st.session_state.最初 = True
 
@@ -33,6 +36,3 @@ if st.button("科学部　生物班"):
 
 if st.button("科学部　化学班"):
    化学班()
-
-if st.session_state.最初 == True:
-    初期ページ()
