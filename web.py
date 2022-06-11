@@ -6,14 +6,14 @@ st.button("科学部工学班")
 st.sidebar.button("科学部　化学班")
 st.sidebar.button("科学部　生物班")
 
-def 工学班():
-    st.title("工学班")
+def page1():
+   st.write("Here is page 1.")
 
-def 化学班():
-    st.title("化学班")
+def page2():
+   st.write("Here is page 2.")
 
-def 生物班():
-    st.title("生物班")
+if st.sidebar.button("Button1"):
+   page1()
 
-if st.button("科学部工学班"):
-    st.title("工学班")
+if st.sidebar.button("Button2"):
+   page2()
