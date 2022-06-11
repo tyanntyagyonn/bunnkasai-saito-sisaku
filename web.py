@@ -10,6 +10,18 @@ if 'pezibangou' not in st.session_state:
 def 初期ページ():
    st.title("中等部科学部")
 
+   if st.button("中等部科学部"):
+      st.session_state.pezibangou = 0
+
+   if st.button("中等部科学部"):
+      st.session_state.pezibangou = 1
+
+   if st.button("中等部科学部"):
+      st.session_state.pezibangou = 2
+
+   if st.button("中等部科学部"):
+      st.session_state.pezibangou = 3
+
 def 工学班():
    st.title("工学班")
 
