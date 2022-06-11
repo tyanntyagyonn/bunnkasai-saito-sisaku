@@ -15,4 +15,5 @@ def 化学班():
 def 生物班():
     st.title("生物班")
 
-工学班
+if st.button("科学部　工学班"):
+    st.title("工学班")
