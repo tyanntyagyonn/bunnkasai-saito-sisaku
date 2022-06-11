@@ -14,12 +14,3 @@ def 化学班():
 
 def 生物班():
     st.title("生物班")
-
-if st.button("科学部　工学班"):
-    工学班
-
-if st.button("科学部　化学班"):
-    化学班
-
-if st.button("科学部　生物班"):
-    生物班
