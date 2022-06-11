@@ -1,40 +1,47 @@
 import streamlit as st
 
-#初期ページ　変数
-st.session_state.最初 = True
+if 'pezibangou' not in st.session_state:
+  st.session_state.pezibangou = 0
 
-#複数ページの設置
+#ページごとのプログラム
 
 def 初期ページ():
    st.title("科学部　文化祭　特設サイト")
 
 def 工学班():
    st.title("工学班")
-   st.session_state.最初 = False
 
 def 生物班():
    st.title("生物班")
-   st.session_state.最初 = False
 
 def 化学班():
    st.title("化学班")
-   st.session_state.最初 = False
 
-#サイドバーの設定およびページ移動
+#ページ番号変更
 
 st.sidebar.title("目次")
 
 if st.sidebar.button("科学部　文化祭　特設サイト"):
-   st.session_state.最初 = True
+   st.session_state.pezibangou = 0
 
 if st.sidebar.button("科学部　工学班"):
-   工学班()
+   st.session_state.pezibangou = 1
 
 if st.sidebar.button("科学部　生物班"):
-   生物班()
+   st.session_state.pezibangou = 2
 
 if st.sidebar.button("科学部　化学班"):
-   化学班()
+   st.session_state.pezibangou = 3
 
-if st.session_state.最初 == True:
+
+
+#ページ移動
+
+if st.session_state.pezibangou == 0:
    初期ページ()
+elif st.session_state.pezibangou == 1:
+   工学班()
+elif st.session_state.pezibangou == 2:
+   生物班()
+else:
+   化学班()
