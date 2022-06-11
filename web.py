@@ -20,19 +20,21 @@ def 化学班():
    st.title("化学班")
    st.session_state.最初 = False
 
-#ページ移動
+#サイドバーの設定およびページ移動
 
-if st.session_state.最初 == True:
-   初期ページ()
+st.sidebar.title("目次")
 
-if st.button("科学部　文化祭　特設サイト"):
+if st.sidebar.button("科学部　文化祭　特設サイト"):
     st.session_state.最初 = True
 
-if st.button("科学部　工学班"):
+if st.sidebar.button("科学部　工学班"):
    工学班()
 
-if st.button("科学部　生物班"):
+if st.sidebar.button("科学部　生物班"):
    生物班()
 
-if st.button("科学部　化学班"):
+if st.sidebar.button("科学部　化学班"):
    化学班()
+
+if st.session_state.最初 == True:
+    初期ページ()
