@@ -1,7 +1,9 @@
 import streamlit as st
 
+
+
 if 'pezibangou' not in st.session_state:
-  st.session_state.pezibangou = 0
+   st.session_state.pezibangou = 0
 
 #ページごとのプログラム
 
