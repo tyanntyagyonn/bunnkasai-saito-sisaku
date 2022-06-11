@@ -3,25 +3,50 @@ import streamlit as st
 if 'pezibangou' not in st.session_state:
   st.session_state.pezibangou = 0
 
+
+
+#ボタン設定
+
+def ボタン():
+   if st.button("中等部科学部"):
+      st.session_state.pezibangou = 0
+
+   if st.button("中等部科学部"):
+      st.session_state.pezibangou = 1
+
+   if st.button("中等部科学部"):
+      st.session_state.pezibangou = 2
+
+   if st.button("中等部科学部"):
+      st.session_state.pezibangou = 3
+      
+
+
 #ページごとのプログラム
 
 def 初期ページ():
-   st.title("科学部　文化祭　特設サイト")
+   st.title("中等部科学部")
+   ボタン()
 
 def 工学班():
    st.title("工学班")
+   ボタン()
 
 def 生物班():
    st.title("生物班")
+   ボタン()
 
 def 化学班():
    st.title("化学班")
+   ボタン()
+
+
 
 #ページ番号変更
 
 st.sidebar.title("目次")
 
-if st.sidebar.button("科学部　文化祭　特設サイト"):
+if st.sidebar.button("中等部科学部"):
    st.session_state.pezibangou = 0
 
 if st.sidebar.button("科学部　工学班"):
