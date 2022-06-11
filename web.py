@@ -1,10 +1,13 @@
 import streamlit as st
-st.title("科学部")
-st.sidebar.button(
-    ("工学班")
-)
-if st.button("Button1"):
-   st.write("Button1 clicked")
-
-if st.button("Button2"):
-   st.write("Button2 clicked")
+#ワイド表示
+st.set_page_config(layout="wide")
+#セレクトボックスのリストを作成
+pagelist = ["page1","page2"]
+#サイドバーのセレクトボックスを配置
+selector=st.sidebar.selectbox( "ページ選択",pagelist)
+if selector=="page1":
+    if st.button('ページ1ボタン'):
+        st.title("ページ1のタイトル")
+elif selector=="page2":
+    if st.button('ページ2ボタン'):
+        st.title("ページ2のタイトル")
