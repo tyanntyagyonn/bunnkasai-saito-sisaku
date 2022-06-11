@@ -2,12 +2,14 @@ import streamlit as st
 
 if 'pezibangou' not in st.session_state:
   st.session_state.pezibangou = 0
+      
 
 
+#ページごとのプログラム
 
-#ボタン設定
+def 初期ページ():
+   st.title("中等部科学部")
 
-def ボタン():
    if st.button("中等部科学部"):
       st.session_state.pezibangou = 0
 
@@ -19,26 +21,51 @@ def ボタン():
 
    if st.button("中等部科学部"):
       st.session_state.pezibangou = 3
-      
-
-
-#ページごとのプログラム
-
-def 初期ページ():
-   st.title("中等部科学部")
-   ボタン()
 
 def 工学班():
    st.title("工学班")
-   ボタン()
+
+   if st.button("中等部科学部"):
+      st.session_state.pezibangou = 0
+
+   if st.button("中等部科学部"):
+      st.session_state.pezibangou = 1
+
+   if st.button("中等部科学部"):
+      st.session_state.pezibangou = 2
+
+   if st.button("中等部科学部"):
+      st.session_state.pezibangou = 3
 
 def 生物班():
    st.title("生物班")
-   ボタン()
+
+   if st.button("中等部科学部"):
+      st.session_state.pezibangou = 0
+
+   if st.button("中等部科学部"):
+      st.session_state.pezibangou = 1
+
+   if st.button("中等部科学部"):
+      st.session_state.pezibangou = 2
+
+   if st.button("中等部科学部"):
+      st.session_state.pezibangou = 3
 
 def 化学班():
    st.title("化学班")
-   ボタン()
+
+   if st.button("中等部科学部"):
+      st.session_state.pezibangou = 0
+
+   if st.button("中等部科学部"):
+      st.session_state.pezibangou = 1
+
+   if st.button("中等部科学部"):
+      st.session_state.pezibangou = 2
+
+   if st.button("中等部科学部"):
+      st.session_state.pezibangou = 3
 
 
 
