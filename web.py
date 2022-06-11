@@ -71,19 +71,19 @@ def 化学班():
 
 #ページ番号変更
 
-st.sidebar.title("目次")
+"""st.sidebar.title("目次")
 
 if st.sidebar.button("中等部科学部"):
    st.session_state.pezibangou = 0
 
-if st.sidebar.button("科学部　工学班"):
+if st.sidebar.button("科学部工学班"):
    st.session_state.pezibangou = 1
 
-if st.sidebar.button("科学部　生物班"):
+if st.sidebar.button("科学部生物班"):
    st.session_state.pezibangou = 2
 
-if st.sidebar.button("科学部　化学班"):
-   st.session_state.pezibangou = 3
+if st.sidebar.button("科学部化学班"):
+   st.session_state.pezibangou = 3"""
 
 
 
