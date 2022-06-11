@@ -1,4 +1,6 @@
 import streamlit as st
-import numpy as np
-sample1 = np.array([0,1,2])
-print(sample1)
+st.title("科学部")
+st.sidebar.selectbox(
+    "How would you like to be contacted?",
+    ("Email", "Home phone", "MObile phone")
+)
