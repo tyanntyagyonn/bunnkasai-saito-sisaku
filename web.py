@@ -58,16 +58,24 @@ def ページ移動():
 st.sidebar.title("目次")
 
 if st.sidebar.button("中等部科学部"):
+
    st.session_state.pezibangou = 0
+   ページ移動()
 
 if st.sidebar.button("科学部工学班"):
+
    st.session_state.pezibangou = 1
+   ページ移動()
 
 if st.sidebar.button("科学部生物班"):
+
    st.session_state.pezibangou = 2
+   ページ移動()
 
 if st.sidebar.button("科学部化学班"):
+   
    st.session_state.pezibangou = 3
+   ページ移動()
 
 
 
