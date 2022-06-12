@@ -53,16 +53,16 @@ def ページ移動():
 
    if st.session_state.pezibangou == 0:
       初期ページ()
-      ボタン()
+      #ボタン()
    elif st.session_state.pezibangou == 1:
       工学班()
-      ボタン()
+      #ボタン()
    elif st.session_state.pezibangou == 2:
       生物班()
-      ボタン()
+      #ボタン()
    else:
       化学班()
-      ボタン()
+      #ボタン()
 
 
 if 'pezibangou' not in st.session_state:
