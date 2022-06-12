@@ -64,5 +64,6 @@ def ページ移動():
 if 'pezibangou' not in st.session_state:
 
    st.session_state.pezibangou = 0
-   #サイドバーボタン()
-   ページ移動()
+
+#サイドバーボタン()
+ページ移動()
