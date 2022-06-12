@@ -32,7 +32,7 @@ def ボタン():
       ページ移動()
 
 
-def サイドバーボタン():
+"""def サイドバーボタン():
 
    st.sidebar.title("目次")
    
@@ -47,7 +47,7 @@ def サイドバーボタン():
       ページ移動()
    if st.sidebar.button("科学部化学班掲示板"):
       st.session_state.pezibangou = 3
-      ページ移動()
+      ページ移動()"""
 
 def ページ移動():
 
@@ -68,5 +68,5 @@ def ページ移動():
 if 'pezibangou' not in st.session_state:
 
    st.session_state.pezibangou = 0
-   サイドバーボタン()
+   #サイドバーボタン()
    ページ移動()
