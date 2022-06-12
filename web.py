@@ -69,15 +69,13 @@ def サイドバーボタン():
 if 'pezibangou' not in st.session_state:
 
    st.session_state.pezibangou = 0
-
-   ページ移動()
    サイドバーボタン()
+   ページ移動()
    ボタン()
 
 
 
 #ページ表示
-
-ページ移動()
 サイドバーボタン()
+ページ移動()
 ボタン()
