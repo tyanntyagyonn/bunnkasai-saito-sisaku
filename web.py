@@ -31,18 +31,24 @@ def 班ページ():
          st.session_state.工学班 = True
       else:
          st.session_state.工学班 = False
+   if st.sidebar.button("工学班"):
+      st.session_state.工学班 = True
    工学班ページ()
    if st.button("生物班 "):
       if st.session_state.生物班 == False:
          st.session_state.生物班 = True
       else:
          st.session_state.生物班 = False
+   if st.sidebar.button("生物班"):
+      st.session_state.生物班 = True
    生物班ページ()
    if st.button("化学班 "):
       if st.session_state.化学班 == False:
          st.session_state.化学班 = True
       else:
          st.session_state.化学班 = False
+   if st.sidebar.button("化学班"):
+      st.session_state.化学班 = True
    化学班ページ()
 
 
