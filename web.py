@@ -4,9 +4,6 @@ import streamlit as st
 
 #初期設定
 
-if 'pezibangou' not in st.session_state:
-   st.session_state.pezibangou = 0
-
 def 初期ページ():
    st.title("中等部科学部")
 
@@ -69,27 +66,13 @@ def サイドバーボタン():
 
       st.session_state.pezibangou = 3
 
+if 'pezibangou' not in st.session_state:
 
+   st.session_state.pezibangou = 0
 
-#ボタン
-
-def ボタン():
-   
-   if st.button("中等部科学部 "):
-
-      st.session_state.pezibangou = 0
-
-   if st.button("科学部工学班 "):
-   
-      st.session_state.pezibangou = 1
-
-   if st.button("科学部生物班 "):
-
-      st.session_state.pezibangou = 2
-
-   if st.button("科学部化学班 "):
-
-      st.session_state.pezibangou = 3
+   ページ移動()
+   サイドバーボタン()
+   ボタン()
 
 
 
