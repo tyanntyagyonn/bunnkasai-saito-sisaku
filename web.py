@@ -20,16 +20,12 @@ def ボタン():
    
    if st.button("中等部科学部掲示板 "):
       st.session_state.pezibangou = 0
-      ページ移動()
    if st.button("科学部工学班掲示板 "):
       st.session_state.pezibangou = 1
-      ページ移動()
    if st.button("科学部生物班掲示板 "):
       st.session_state.pezibangou = 2
-      ページ移動()
    if st.button("科学部化学班掲示板 "):
       st.session_state.pezibangou = 3
-      ページ移動()
 
 
 """def サイドバーボタン():
@@ -53,16 +49,16 @@ def ページ移動():
 
    if st.session_state.pezibangou == 0:
       初期ページ()
-      #ボタン()
+      ボタン()
    elif st.session_state.pezibangou == 1:
       工学班()
-      #ボタン()
+      ボタン()
    elif st.session_state.pezibangou == 2:
       生物班()
-      #ボタン()
+      ボタン()
    else:
       化学班()
-      #ボタン()
+      ボタン()
 
 
 if 'pezibangou' not in st.session_state:
