@@ -2,9 +2,9 @@ import streamlit as st
 
 #初期設定
 
-st.session_state.工学班 == False
-st.session_state.生物班 == False
-st.session_state.化学班 == False
+st.session_state.工学班 = False
+st.session_state.生物班 = False
+st.session_state.化学班 = False
 
 def 工学班():
    st.title("工学班")
