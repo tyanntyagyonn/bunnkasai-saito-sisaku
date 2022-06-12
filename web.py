@@ -1,7 +1,6 @@
 import streamlit as st
 
 
-
 #初期設定
 
 if 'pezibangou' not in st.session_state:
@@ -61,10 +60,5 @@ def ページ移動():
 
 
 
-#初期設定
-if 'pezibangou' not in st.session_state:
-
-   st.session_state.pezibangou = 0
-   
-   ページ移動()
+ページ移動()
 
