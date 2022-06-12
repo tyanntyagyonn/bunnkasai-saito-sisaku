@@ -17,10 +17,10 @@ def 工学班ページ():
    if st.session_state.工学班 == True:
       工学班()
 def 生物班ページ():
-   if st.session_state.工学班 == True:
+   if st.session_state.生物班 == True:
       生物班()
 def 化学班ページ():
-   if st.session_state.工学班 == True:
+   if st.session_state.化学班 == True:
       化学班()
 
 def 班ページ():
