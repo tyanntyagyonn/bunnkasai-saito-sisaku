@@ -29,19 +29,19 @@ def 班ページ():
          st.session_state.工学班 = True
       else:
          st.session_state.工学班 = False
-      工学班ページ()
+   工学班ページ()
    if st.button("生物班 "):
       if st.session_state.生物班 == False:
          st.session_state.生物班 = True
       else:
          st.session_state.生物班 = False
-      生物班ページ()
+   生物班ページ()
    if st.button("化学班 "):
       if st.session_state.化学班 == False:
          st.session_state.化学班 = True
       else:
          st.session_state.化学班 = False
-      化学班ページ()
+   化学班ページ()
 
 
 #ページ表示
