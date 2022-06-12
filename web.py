@@ -9,7 +9,7 @@ st.session_state.化学班 = False
 def 工学班():
    st.title("工学班")
 def 生物班():
-   st.title("工学班")
+   st.title("生物班")
 def 化学班():
    st.title("化学班")
 
